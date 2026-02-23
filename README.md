@@ -51,43 +51,29 @@ Customer Satisfaction & Returns
 
 The dataset includes order-level transactional data with the following key fields 
 
-Problem Statement
-
-:
-
 Order ID
-
 Date
-
 Status
-
 Fulfillment Type (Amazon / Merchant)
-
 Sales Channel
-
 Category
-
 SKU
-
 Quantity
-
 Amount
-
 Shipping City / State / Country
-
 B2B Flag
-
 Promotion IDs
-
 Ship Service Level
 
 🛠 Tools & Technologies Used
-Category	                                        Tools Used
-Data Cleaning	                                Power Query, Excel
-Data Modeling	                                Star Schema Modeling Preffered
-Visualization	                                Power BI
-Calculations	                                DAX
-Business Analysis                            	Retail KPI Framework
+**Category**	                     |                   🏗** Architecture Overview**
+🔹 Data Flow Architecture            |
+Data Cleaning	                     |           Power Query, Excel
+Data Modeling	                     |           Star Schema Modeling Preffered
+Visualization	                     |           Power BI
+Calculations	                     |           DAX
+Business Analysis                    |        	 Retail KPI Framework
+
 🔄 Data Preparation Steps
 
 Data exploration and validation
@@ -117,7 +103,7 @@ Raw Transaction Data
         ↓
 Data Cleaning (Power Query)
         ↓
-Star Schema Data Model(General Case ,Not needed Here as we have Single Consolidated Sales Table)
+Star Schema Data Model (General Case ,Not needed Here as we have Single Consolidated Sales Table)
         ↓
 DAX KPI Layer
         ↓
