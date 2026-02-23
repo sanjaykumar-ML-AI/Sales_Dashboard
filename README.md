@@ -1,64 +1,67 @@
-📌 1. Project Overview
+📊 E-Commerce Retail Analytics & Optimization Dashboard
+🏢 Project Overview
 
-This Power BI report was developed to analyze the operational and financial performance of an e-commerce company facing growth and customer satisfaction challenges
-The Report provides data-driven insights across:
+This project analyzes the operational and financial performance of an e-commerce company facing growth and customer satisfaction challenges 
+
+Problem Statement
+
+The goal of this project is to transform raw transactional data into actionable business insights that drive:
+
+Revenue growth
+
+Operational efficiency
+
+Customer satisfaction
+
+Inventory optimization
+
+Sustainable business performance
+
+This solution was built using Power BI with a structured data analysis approach.
+
+🎯 Business Problem
+
+The company is experiencing:
+
+High order cancellations
+
+Shipping delays
+
+Inventory inefficiencies
+
+Return rate challenges
+
+Customer retention issues
+
+Fulfillment performance gaps
+
+To address these issues, a comprehensive analytics dashboard was developed covering:
 
 Financial Performance
-Customer Behavior
+
+Customer Insights
+
 Logistics & Fulfillment
+
 Product & Inventory Optimization
+
 Customer Satisfaction & Returns
-The objective is to support Stakeholders in making informed decisions to drive sustainable growth
 
-🎯 2. Business Objectives
+📂 Dataset Overview
 
-The report addresses the following strategic questions:
+The dataset includes order-level transactional data with the following key fields 
 
-🔹 Financial Performance
+Problem Statement
 
-What is the total revenue trend over time?
+:
 
-Which products and categories drive maximum sales?
-
-What is the Average Order Value (AOV)?
-
-🔹 Customer Insights
-
-Which locations generate the highest sales?
-
-What is the cancellation trend?
-
-How does B2B behavior differ from B2C?
-
-🔹 Logistics & Fulfillment
-
-What is the average shipping time?
-
-Are Amazon-fulfilled orders more efficient than Merchant-fulfilled?
-
-Where are delivery bottlenecks occurring?
-
-🔹 Product & Inventory Optimization
-
-Which product categories have highest demand?
-
-What is the average quantity ordered?
-
-
-🔹  SKU Returns Insights
-
-Which categories have highest return rates?
-
-🗂 3. Dataset Description
-
-The dataset includes order-level transactional data with the following key fields
 Order ID
 
 Date
 
 Status
 
-Fulfillment
+Fulfillment Type (Amazon / Merchant)
 
 Sales Channel
 
@@ -70,86 +73,64 @@ Quantity
 
 Amount
 
-Shipping details (city, state, country)
+Shipping City / State / Country
 
-B2B flag
+B2B Flag
 
 Promotion IDs
 
-🛠 4. Data Preparation & Cleaning
+Ship Service Level
 
-The following steps were performed:
+🛠 Tools & Technologies Used
+Category	                                        Tools Used
+Data Cleaning	                                Power Query, Excel
+Data Modeling	                                Star Schema Modeling Preffered
+Visualization	                                Power BI
+Calculations	                                DAX
+Business Analysis                            	Retail KPI Framework
+🔄 Data Preparation Steps
 
-Data profiling and validation
+Data exploration and validation
 
-Replaced null values in Amount column using median value 
+Handled missing values:
 
-Removed inconsistent order statuses
+Replaced null values in Amount column with median value 
 
-Standardized date format
+Standardized date formats
 
 Created calculated columns:
 
-Order Month
+Month
+
+Weekday
 
 Cancellation Flag
 
 Return Flag
 
-Built a Star Schema model:
+Generally optimized star schema data model is preffered if we had Sales Table,Order Table, Customer Table and Product Table Seperatley but we have One Single consolidated Table we dint needed Data Modeling(Star Scehme) Here by Connecting Different Tables 
+Also We needed Seperate Date Table for Time Intelligent DAX Functions like YOY Sales and Profit comparision but wehave only 2022 Year sales data in this given dataset we don't need Date Table.
 
-Fact Table: Orders
+🏗 Architecture Overview
+🔹 Data Flow Architecture
+Raw Transaction Data
+        ↓
+Data Cleaning (Power Query)
+        ↓
+Star Schema Data Model(General Case ,Not needed Here as we have Single Consolidated Sales Table)
+        ↓
+DAX KPI Layer
+        ↓
+Interactive Power BI Dashboard/Report
+        ↓
+Business Decision Layer
 
-Dimension Tables: Date, Product, Location
-
-📊 5. Dashboard Structure
-🔹 Page 1 – Executive Overview
+📊 Dashboard Structure
+1️⃣ Executive Overview
 
 Total Revenue
 
 Total Orders
-
-AOV
-
-Cancellation %
-
-Return %
-
-Revenue Trend
-
-🔹 Page 2 – Customer Insights
-
-Sales by State ad City
-
-B2B vs B2C comparison
-
-Cancellation by region
-
-🔹 Page 3 – Logistics & Fulfillment
-
-Fulfillment comparison (Amazon vs Merchant)
-
-🔹 Page 4 – Inventory Optimization
-
-High-demand categories
-
-Avg quantity per order
-
-Stock risk indicators
-
-Inventory turnover metrics
-
-🔹 Page 5 – Returns & Customer Experience
-
-Return rate by category
-
-Cancellation Rate
-
-High-Demand SKUs
-
-📈 6. Key KPIs Calculated
-
-Total Revenue
 
 Average Order Value
 
@@ -157,71 +138,174 @@ Cancellation Rate
 
 Return Rate
 
-Inventory KPI's
+Revenue Trend Over Time
+
+2️⃣ Financial Performance Analysis
+
+Revenue growth trend
+
+Seasonal sales trends
+
+Best-selling categories
+
+AOV (Average Order Value)
+
+3️⃣ Customer Insights
+
+Top-performing states
+
+B2B vs B2C comparison
+
+Cancellation trends
+
+4️⃣ Logistics & Fulfillment Optimization
+
+Fulfillment comparison (Amazon vs Merchant)
+
+Shipping service level performance
+
+5️⃣ Product & Inventory Optimization
+
+High-demand categories
+
+Average quantity ordered
+
+Inventory risk indicators
+
+SKU-level analysis
+
+6️⃣ Customer Satisfaction & Returns
+
+Return rate by category
+
+Cancellation by product
+
+High-risk SKUs
+
+Quality improvement signals
+
+📈 Key KPIs Developed
+
+Total Revenue
+
+Total Orders
+
+Average Order Value (AOV)
+
+Cancellation %
+
+Return %
+
+Fulfillment Efficiency %
 
 Average Shipping Time
 
+Inventory Demand Index
+
 B2B Contribution %
 
-7. Key Insights
+🚧 Challenges Faced
+1️⃣ Data Quality Issues
 
-Example insights from analysis:
+Missing values in Amount column
 
-Merchant-fulfilled orders show higher cancellation rates.
+Inconsistent order statuses
 
-Specific product categories contribute to majority of returns.
+Mixed date formats
 
-B2B customers have higher AOV but lower cancellation.
+2️⃣ Complex Order Status Logic
 
-Certain states show high sales but also high return percentage.
+Mapping multiple status values into:
 
-8. Business Recommendations
+Completed
 
-Based on analysis:
+Cancelled
 
-Optimize merchant fulfillment processes.
+Returned
 
-Implement dynamic safety stock for high-demand categories.
+Pending
 
-Review product quality for high-return SKUs.
+3️⃣ Fulfillment Comparison
 
-Improve SLA tracking for delayed shipments.
+Differentiating performance between:
 
-Develop targeted marketing for B2B customers.
+Amazon Fulfillment
 
-📌 9. Tools & Technologies Used
+Merchant Fulfillment
 
-Power BI
 
-DAX (Advanced calculations)
+🔍 Key Insights Derived
 
-Data Modeling (Star Schema)
+Merchant-fulfilled orders had higher cancellation rates.
 
-Excel (Data cleaning support)
+Certain product categories contributed disproportionately to returns.
 
-📊 10. Impact of This Report
+B2B customers showed higher AOV but lower cancellation probability.
 
-This report enables:
+Some regions had high sales volume but low retention rates.
 
-Data-driven operational decisions
+Inventory imbalance in specific categories led to stock pressure.
 
-Reduction in stockouts & overstock
+🚀 Strategic Recommendations
+1️⃣ Improve Merchant Fulfillment
 
-Better fulfillment efficiency
+Implement stricter SLA monitoring and fulfillment tracking.
 
-Strategic revenue optimization
+2️⃣ Optimize Inventory for High-Demand Categories
 
-🧠 11. Learning Outcomes
+Adopt dynamic safety stock strategy based on demand volatility.
 
-Applied retail analytics frameworks
+3️⃣ Reduce Returns
 
-Built end-to-end BI solution
+Conduct quality review for high-return SKUs.
 
-Integrated financial, customer, and logistics insights
+4️⃣ Leverage B2B Segment
 
-Transformed raw transactional data into strategic recommendations
+Create loyalty programs targeting high-value B2B customers.
 
-🎯 12. Conclusion
+5️⃣ Implement Predictive Monitoring
 
-This Power BI solution demonstrates how data analytics can transform operational challenges into actionable insights, 
-enabling the e-commerce company to achieve sustainable growth and enhanced customer satisfaction
+Use rolling trend analysis to anticipate cancellation spikes.
+
+📈 Business Impact Potential
+
+If implemented, recommendations can lead to:
+
+Reduced cancellation rates
+
+Lower return costs
+
+Improved inventory turnover
+
+Enhanced customer retention
+
+Higher operational efficiency
+
+Sustainable revenue growth
+
+🧠 Learning Outcomes
+
+This project demonstrates:
+
+End-to-end retail analytics implementation
+
+Data cleaning and transformation
+
+Advanced DAX modeling
+
+Business-driven dashboard design
+
+Translating data insights into executive recommendations
+
+🏁 Conclusion
+
+This Power BI solution converts raw transactional data into a strategic decision-making tool that enables the e-commerce company to overcome operational challenges and achieve sustainable growth 
+
+Problem Summary:
+
+The project highlights the importance of integrating financial, customer, logistics, and inventory analytics into a unified business intelligence framework.
+
+👤 Author
+Sanjaykumar
+Retail Business Analytics Project
+Power BI | DAX | Retail Strategy | Data-Driven Decision Making
