@@ -1,9 +1,9 @@
-📊 E-Commerce Retail Analytics & Optimization Dashboard
+📊 **E-Commerce Retail Analytics & Optimization Dashboard**
 🏢 Project Overview
 
 This project analyzes the operational and financial performance of an e-commerce company facing growth and customer satisfaction challenges 
 
-Problem Statement
+Problem Statement:
 
 The goal of this project is to transform raw transactional data into actionable business insights that drive:
 
@@ -47,7 +47,7 @@ Product & Inventory Optimization
 
 Customer Satisfaction & Returns
 
-📂 Dataset Overview
+📂 🔹 Data Flow Architecture  
 
 The dataset includes order-level transactional data with the following key fields 
 
@@ -65,16 +65,17 @@ B2B Flag
 Promotion IDs
 Ship Service Level
 
-🛠 Tools & Technologies Used
+🛠 **Tools & Technologies Use**d
+
 **Category**	                     |                   🏗** Architecture Overview**
-🔹 Data Flow Architecture            |
+          												|
 Data Cleaning	                     |           Power Query, Excel
 Data Modeling	                     |           Star Schema Modeling Preffered
 Visualization	                     |           Power BI
 Calculations	                     |           DAX
-Business Analysis                    |        	 Retail KPI Framework
+Business Analysis                  |        	 Retail KPI Framework
 
-🔄 Data Preparation Steps
+🔄 **Data Preparation Steps**
 
 Data exploration and validation
 
@@ -97,8 +98,9 @@ Return Flag
 Generally optimized star schema data model is preffered if we had Sales Table,Order Table, Customer Table and Product Table Seperatley but we have One Single consolidated Table we dint needed Data Modeling(Star Scehme) Here by Connecting Different Tables 
 Also We needed Seperate Date Table for Time Intelligent DAX Functions like YOY Sales and Profit comparision but wehave only 2022 Year sales data in this given dataset we don't need Date Table.
 
-🏗 Architecture Overview
+🏗** Architecture Overvie**w
 🔹 Data Flow Architecture
+
 Raw Transaction Data
         ↓
 Data Cleaning (Power Query)
@@ -111,7 +113,7 @@ Interactive Power BI Dashboard/Report
         ↓
 Business Decision Layer
 
-📊 Dashboard Structure
+📊** Dashboard Structure**
 1️⃣ Executive Overview
 
 Total Revenue
@@ -211,7 +213,7 @@ Returned
 
 Pending
 
-3️⃣ Fulfillment Comparison
+3️⃣ **Fulfillment Comparison**
 
 Differentiating performance between:
 
@@ -220,7 +222,7 @@ Amazon Fulfillment
 Merchant Fulfillment
 
 
-🔍 Key Insights Derived
+🔍 **Key Insights Derived**
 
 Merchant-fulfilled orders had higher cancellation rates.
 
@@ -232,7 +234,7 @@ Some regions had high sales volume but low retention rates.
 
 Inventory imbalance in specific categories led to stock pressure.
 
-🚀 Strategic Recommendations
+🚀** Strategic Recommendations**
 1️⃣ Improve Merchant Fulfillment
 
 Implement stricter SLA monitoring and fulfillment tracking.
@@ -253,7 +255,7 @@ Create loyalty programs targeting high-value B2B customers.
 
 Use rolling trend analysis to anticipate cancellation spikes.
 
-📈 Business Impact Potential
+📈** Business Impact Potential**
 
 If implemented, recommendations can lead to:
 
@@ -269,7 +271,7 @@ Higher operational efficiency
 
 Sustainable revenue growth
 
-🧠 Learning Outcomes
+🧠 **Learning Outcomes**
 
 This project demonstrates:
 
@@ -283,15 +285,15 @@ Business-driven dashboard design
 
 Translating data insights into executive recommendations
 
-🏁 Conclusion
+🏁 **Conclusion**
 
 This Power BI solution converts raw transactional data into a strategic decision-making tool that enables the e-commerce company to overcome operational challenges and achieve sustainable growth 
 
-Problem Summary:
+**Problem Summary:**
 
 The project highlights the importance of integrating financial, customer, logistics, and inventory analytics into a unified business intelligence framework.
 
-👤 Author
+👤** Author**
 Sanjaykumar
 Retail Business Analytics Project
 Power BI | DAX | Retail Strategy | Data-Driven Decision Making
