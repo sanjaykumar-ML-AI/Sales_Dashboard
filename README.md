@@ -191,16 +191,17 @@ Inventory Demand Index
 
 B2B Contribution %
 
-🚧 Challenges Faced
-1️⃣ Data Quality Issues
+🚧**Challenges Faced**
+
+1️⃣ **Data Quality Issues**
 
 Missing values in Amount column
 
-Inconsistent order statuses
+Inconsistent order statuses and Ship City Names
 
 Mixed date formats
 
-2️⃣ Complex Order Status Logic
+2️⃣ **Complex Order Status Logic**
 
 Mapping multiple status values into:
 
@@ -233,7 +234,8 @@ Some regions had high sales volume but low retention rates.
 
 Inventory imbalance in specific categories led to stock pressure.
 
-🚀** Strategic Recommendations**
+🚀**Strategic Recommendations**
+
 1️⃣ Improve Merchant Fulfillment
 
 Implement stricter SLA monitoring and fulfillment tracking.
@@ -249,10 +251,6 @@ Conduct quality review for high-return SKUs.
 4️⃣ Leverage B2B Segment
 
 Create loyalty programs targeting high-value B2B customers.
-
-5️⃣ Implement Predictive Monitoring
-
-Use rolling trend analysis to anticipate cancellation spikes.
 
 📈** Business Impact Potential**
 
