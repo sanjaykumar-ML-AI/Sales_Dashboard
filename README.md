@@ -67,13 +67,12 @@ Ship Service Level
 
 🛠 **Tools & Technologies Use**d
 
-**Category**	                     |                   🏗** Architecture Overview**
-          												|
-Data Cleaning	                     |           Power Query, Excel
-Data Modeling	                     |           Star Schema Modeling Preffered
-Visualization	                     |           Power BI
-Calculations	                     |           DAX
-Business Analysis                  |        	 Retail KPI Framework
+**Category**	         -|-           🏗** Architecture Overview**         				
+Data Cleaning	         -|-          Power Query, Excel
+Data Modeling	         -|-          Star Schema Modeling Preffered(Not needed Here as we have Single Consolidated Sales Table)
+Visualization	         -|-          Power BI
+Calculations	         -|-          DAX
+Business Analysis            -|-          Retail KPI Framework
 
 🔄 **Data Preparation Steps**
 
@@ -96,9 +95,9 @@ Cancellation Flag
 Return Flag
 
 Generally optimized star schema data model is preffered if we had Sales Table,Order Table, Customer Table and Product Table Seperatley but we have One Single consolidated Table we dint needed Data Modeling(Star Scehme) Here by Connecting Different Tables 
-Also We needed Seperate Date Table for Time Intelligent DAX Functions like YOY Sales and Profit comparision but wehave only 2022 Year sales data in this given dataset we don't need Date Table.
+Also We needed Seperate Date Table for Time Intelligent DAX Functions like YOY Sales and Profit comparision but as we have only 2022 Year sales data in this given dataset we don't need Date Table.
 
-🏗** Architecture Overvie**w
+🏗**Architecture Overview**
 🔹 Data Flow Architecture
 
 Raw Transaction Data
