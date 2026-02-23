@@ -47,7 +47,7 @@ Product & Inventory Optimization
 
 Customer Satisfaction & Returns
 
-📂 🔹 Data Flow Architecture  
+📂 🔹 Data Overview
 
 The dataset includes order-level transactional data with the following key fields 
 
@@ -68,11 +68,11 @@ Ship Service Level
 🛠 **Tools & Technologies Use**d
 
 **Category**	         -|-           🏗** Architecture Overview**         				
-Data Cleaning	         -|-          Power Query, Excel
-Data Modeling	         -|-          Star Schema Modeling Preffered(Not needed Here as we have Single Consolidated Sales Table)
-Visualization	         -|-          Power BI
-Calculations	         -|-          DAX
-Business Analysis            -|-          Retail KPI Framework
+Data Cleaning	         -|-          Power Query, Excel|
+Data Modeling	         -|-          Star Schema Modeling Preffered(Not needed Here as we have Single Consolidated Sales Table)|
+Visualization	         -|-          Power BI|
+Calculations	         -|-          DAX|
+Business Analysis        -|-          Retail KPI Framework
 
 🔄 **Data Preparation Steps**
 
