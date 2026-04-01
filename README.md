@@ -1,4 +1,5 @@
 📊 Ecom Sales Analysis Project using Power BI
+
 🔍 Project Overview
 The Ecom Sales Analysis project mailny focuses on understanding sales trends and Products Performances to help businesses make informed decisions. The project aims to identify key factors such as top-performing products, high-revenue regions that contribute significantly to overall sales performance.
 
