@@ -39,6 +39,7 @@ Problem Summary:
 The project highlights the importance of integrating financial, customer, logistics, and inventory analytics into a unified business intelligence framework.
 
 Author
+
 Sanjaykumar
 Retail Business Analytics Project
 Power BI | DAX | Retail Strategy | Data-Driven Decision Making
