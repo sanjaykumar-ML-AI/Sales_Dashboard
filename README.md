@@ -7,12 +7,13 @@ Problem Statement
 Businesses often struggle to pinpoint which products, regions, drive the revenue significantly. This project addresses that challenge by analyzing sales data to extract meaningful patterns and insights that can guide strategic planning and improve overall business growth.
 
 Dataset
-The dataset used in this project includes:
 
+The dataset used in this project includes:
 Sales transactions,Product categories,Order quantities,location,Orders Date
 
 Tools Used
-Power BI: Used for data cleaning, analysis, and creating interactive dashboards and charts.
+
+Power BI: Used for data cleaning, analysis, and creating interactive charts and Reports .
 Microsoft Power BI Report: Used to present the final outcomes in a clear and structured format for stakeholders.
 
 Conclusion
